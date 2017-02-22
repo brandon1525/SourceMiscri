@@ -60,32 +60,6 @@
           expect($location.url()).toEqual('/');
         });
 
-        it('should be redirected to previous state after successful login',
-          inject(function (_$state_) {
-            $state = _$state_;
-            $state.previous = {
-              state: {
-                name: 'articles.create'
-              },
-              params: {},
-              href: '/articles/create'
-            };
-
-            spyOn($state, 'transitionTo');
-            spyOn($state, 'go');
-
-            // Test expected GET request
-            $httpBackend.when('POST', '/api/auth/signin').respond(200, 'Fred');
-
-            scope.signin(true);
-            $httpBackend.flush();
-
-            // Test scope value
-            expect($state.go).toHaveBeenCalled();
-            expect($state.go).toHaveBeenCalledWith($state.previous.state.name, $state.previous.params);
-
-          }));
-
         it('should fail to log in with nothing', function () {
           // Test expected POST request
           $httpBackend.expectPOST('/api/auth/signin').respond(400, {

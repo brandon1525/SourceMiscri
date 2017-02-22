@@ -9,7 +9,6 @@
 
   function SongsListController(SongsService) {
     var vm = this;
-    console.log("SongsListController start");
     vm.songs = SongsService.query();
   }
 }());

@@ -9,7 +9,6 @@
   SongsController.$inject = ['$scope', '$state', '$window', 'songResolve'];
 
   function SongsController ($scope, $state, $window, song) {
-    console.log("SongsController start");
     var vm = this;
 
     vm.song = song;

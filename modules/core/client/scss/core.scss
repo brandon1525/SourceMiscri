@@ -1,0 +1,81 @@
+.content {
+  margin-top: 50px;
+}
+
+.undecorated-link {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.x-ng-cloak {
+  display: none !important;
+}
+
+.header-profile-image {
+  border-radius: 50%;
+  height: 28px;
+  margin-right: 5px;
+  opacity: 0.8;
+  width: 28px;
+}
+
+.open .header-profile-image,
+a:hover .header-profile-image {
+  opacity: 1;
+}
+
+.user-header-dropdown-toggle {
+  padding-bottom: 11px !important;
+  padding-top: 11px !important;
+}
+
+.user-primary-account {
+  font-size: 30px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.error-text {
+  display: none;
+}
+
+.has-error .help-block.error-text {
+  display: block;
+}
+
+.has-error .help-inline.error-text {
+  display: inline;
+}
+
+#row_fav_song {
+  margin-top: 10%;
+  .inputLabel{
+    color: #f44336;
+  }
+  .form-control{
+    border: 1px solid #e57373;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    &:focus{
+      border-color: #f44336;
+      outline: 0;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+      box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px #F44336;
+    }
+  }
+}
+#btn_save{
+  background-color: #F44336;
+  color: black;
+  &:hover{
+    background-color: rgba(0, 0, 0, 0);
+    color: #F44336;
+    border: 1px solid #F44336;
+  }
+  &:focus{
+    outline-width: 0px;
+  }
+}

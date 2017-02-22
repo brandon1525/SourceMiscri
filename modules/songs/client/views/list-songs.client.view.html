@@ -1,0 +1,20 @@
+<section>
+  <div class="page-header">
+    <h1>Songs</h1>
+  </div>
+  <div class="list-group">
+    <a ng-repeat="song in vm.songs"
+       ui-sref="songs.view({ songId: song._id })"
+       class="list-group-item">
+      <small class="list-group-item-text">
+        Posted on
+        <span ng-bind="song.created | date:'medium'"></span>
+      </small>
+      <h4 class="list-group-item-heading">
+        <small>Artist name: </small> <small ng-bind="song.artistName"></small> -
+        <small>Genre: </small> <small ng-bind="song.genre"></small> -
+        <small>Song title: </small> <small ng-bind="song.songTitle"></small>
+      </h4>
+    </a>
+  </div>
+</section>

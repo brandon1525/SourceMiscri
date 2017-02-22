@@ -1,0 +1,11 @@
+<section ng-init="findOne()">
+  <div class="page-header">
+    <h4>Id: <small ng-bind="vm.song._id"></small></h4>
+  </div>
+<h4>
+  <p><small>Posted on: </small> <small ng-bind="vm.song.created | date:'medium'"></small> </p>
+  <p><small>Artist name: </small> <small ng-bind="vm.song.artistName"></small> </p>
+  <p><small>Genre: </small> <small ng-bind="vm.song.genre"></small> </p>
+  <p><small>Song title: </small> <small ng-bind="vm.song.songTitle"></small> </p>
+</h4>
+</section>

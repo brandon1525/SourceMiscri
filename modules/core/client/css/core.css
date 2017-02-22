@@ -1,37 +1,65 @@
 .content {
-  margin-top: 50px;
-}
+  margin-top: 50px; }
+
 .undecorated-link:hover {
-  text-decoration: none;
-}
-[ng\:cloak],
-[ng-cloak],
-[x-ng-cloak],
-.ng-cloak,
+  text-decoration: none; }
+
 .x-ng-cloak {
-  display: none !important;
-}
+  display: none !important; }
+
 .header-profile-image {
-  opacity: 0.8;
-  height: 28px;
-  width: 28px;
   border-radius: 50%;
+  height: 28px;
   margin-right: 5px;
-}
+  opacity: 0.8;
+  width: 28px; }
+
 .open .header-profile-image,
 a:hover .header-profile-image {
-  opacity: 1;
-}
+  opacity: 1; }
+
 .user-header-dropdown-toggle {
-  padding-top: 11px !important;
   padding-bottom: 11px !important;
-}
+  padding-top: 11px !important; }
+
+.user-primary-account {
+  font-size: 30px;
+  position: absolute;
+  right: 10px;
+  top: 10px; }
+
 .error-text {
-  display: none;
-}
+  display: none; }
+
 .has-error .help-block.error-text {
-  display: block;
-}
+  display: block; }
+
 .has-error .help-inline.error-text {
-  display: inline;
-}
+  display: inline; }
+
+#row_fav_song {
+  margin-top: 10%; }
+  #row_fav_song .inputLabel {
+    color: #f44336; }
+  #row_fav_song .form-control {
+    border: 1px solid #e57373;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s; }
+    #row_fav_song .form-control:focus {
+      border-color: #f44336;
+      outline: 0;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #F44336; }
+
+#btn_save {
+  background-color: #F44336;
+  color: black; }
+  #btn_save:hover {
+    background-color: transparent;
+    color: #F44336;
+    border: 1px solid #F44336; }
+  #btn_save:focus {
+    outline-width: 0px; }
+
+/*# sourceMappingURL=core.css.map */
